@@ -1,9 +1,0 @@
-/* THANKS */
-
-	Name: roux
-	GitHub: @sudocode1
-
-/* SITE */
-	Last update: 2021/09/30
-	Language: English
-	Doctype: HTML5, CSS3
