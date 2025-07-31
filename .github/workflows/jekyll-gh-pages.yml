@@ -59,13 +59,13 @@ jobs:
         id: tor-deployment
         run: |
           . /etc/lsb-release
-          sudo bash -e 'mkdir -p /etc/apt/sources.list.d/; echo "deb [signed-by=/usr/share/keyrings/deb.torproject.org-keyring.gpg] https://deb.torproject.org/torproject.org $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/tor.list'
-          sudo bash -e 'mkdir -p /etc/apt/sources.list.d/; echo "deb-src [signed-by=/usr/share/keyrings/deb.torproject.org-keyring.gpg] https://deb.torproject.org/torproject.org $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/tor.list'
+          sudo bash -c 'mkdir -p /etc/apt/sources.list.d/; echo "deb [signed-by=/usr/share/keyrings/deb.torproject.org-keyring.gpg] https://deb.torproject.org/torproject.org $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/tor.list'
+          sudo bash -c 'echo "deb-src [signed-by=/usr/share/keyrings/deb.torproject.org-keyring.gpg] https://deb.torproject.org/torproject.org $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/tor.list'
           sudo wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --dearmor | tee /usr/share/keyrings/deb.torproject.org-keyring.gpg >/dev/null
           sudo apt update
           sudo apt install tor deb.torproject.org-keyring
-          sudo bash -e 'echo "HiddenServiceDir /var/lib/tor/my_website/" > /etc/tor/torrc'
-          sudo bash -e 'echo "HiddenServicePort 80 127.0.0.1:4000" >> /etc/tor/torrc'
+          sudo bash -c 'echo "HiddenServiceDir /var/lib/tor/my_website/" > /etc/tor/torrc'
+          sudo bash -c 'echo "HiddenServicePort 80 127.0.0.1:4000" >> /etc/tor/torrc'
           sudo systemctl restart tor
           jekyll serve --port 4000 &
           ls /var/lib/tor/my_website/
