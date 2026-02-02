@@ -1,33 +1,33 @@
 ==================================================================
-https://keybase.io/jbmagination
+https://keybase.io/suprstarrd
 --------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am an admin of https://jbmagination.com
-  * I am jbmagination (https://keybase.io/jbmagination) on keybase.
-  * I have a public key ASAH0X2j7PbMoPXF578mib_jzHnHj2y_tKe9xhOG5WaYewo
+  * I am an admin of https://suprstarrd.com
+  * I am suprstarrd (https://keybase.io/suprstarrd) on keybase.
+  * I have a public key ASAjmmu8nAZOmflts7ik9OxbllqRPlSGtGDpdOxG5kQVLAo
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "012007d17da3ecf6cca0f5c5e7bf2689bfe3cc79c78f6cbfb4a7bdc61386e566987b0a",
+      "eldest_kid": "0120239a6bbc9c064e99f96db3b8a4f4ec5b965a913e5486b460e974ec46e644152c0a",
       "host": "keybase.io",
-      "kid": "012007d17da3ecf6cca0f5c5e7bf2689bfe3cc79c78f6cbfb4a7bdc61386e566987b0a",
-      "uid": "8fa0995a754b0923511c836b95381719",
-      "username": "jbmagination"
+      "kid": "0120239a6bbc9c064e99f96db3b8a4f4ec5b965a913e5486b460e974ec46e644152c0a",
+      "uid": "f87af5014d9b1fe0d9d734675c729b19",
+      "username": "suprstarrd"
     },
     "merkle_root": {
-      "ctime": 1546717884,
-      "hash": "9c453104e4b9d7524c15cea5361e948c6484fa5d7813824b4dfc0499f6653daea54839ad573277b511fbb06e4c978be93f68e4eb4130b3ada5fde4178d5af7f4",
-      "hash_meta": "0e3cd4f9fdb010bf6b81cf6053adec9dd9c5601ce6132c23c941eb361a8abcd5",
-      "seqno": 4237269
+      "ctime": 1769993110,
+      "hash": "0315ef460d12053219c4c6b756b194b30690a0241994ff26399d91254fdccd17195927696237cad6b82b2c8063dfa79636a2f70dc630c26ad7a18fa302948eac",
+      "hash_meta": "4fffe7d9b7b240f5f19f4db37976344d362cac4fa11e96f1b09266c8cbedbc48",
+      "seqno": 27381618
     },
     "service": {
-      "entropy": "qwkadxirUCwja89/igWEzwU+",
-      "hostname": "jbmagination.com",
+      "entropy": "aEHF70gd69xsUuNJ3SliMK/W",
+      "hostname": "suprstarrd.com",
       "protocol": "https:"
     },
     "type": "web_service_binding",
@@ -35,22 +35,22 @@ To do so, I am signing this object:
   },
   "client": {
     "name": "keybase.io go client",
-    "version": "2.12.6"
+    "version": "6.5.4"
   },
-  "ctime": 1546717901,
+  "ctime": 1769993361,
   "expire_in": 504576000,
-  "prev": "326f3cdc7a32bc2249cbe62f9e1d5c32bdd1494ed401a09fff28f83b70430bb3",
-  "seqno": 47,
+  "prev": "60d0bfeaa64a6690194670e79d3a07c916ca5537a9e2199b94409d522476618e",
+  "seqno": 6,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgB9F9o+z2zKD1xee/Jom/48x5x49sv7SnvcYThuVmmHsKp3BheWxvYWTESpcCL8QgMm883HoyvCJJy+Yvnh1cMr3RSU7UAaCf/yj4O3BDC7PEIJuW+idLpeK85G8kd/y4dMb/+L4Q3kStRJLqnv5B89vWAgHCo3NpZ8RAZhMUhXhyRjqWh15fO5eTQbjN5i5XxvqkcU5dcv6C1Z7gHX5OcicpSYrKF++aIiHwmTZVO/pzmmHTNHFURBohBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKLzD/35V5AzSBfXAlTUzUjxv8YMoqVgqtEc567eqU4Ro3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgI5prvJwGTpn5bbO4pPTsW5ZakT5UhrRg6XTsRuZEFSwKp3BheWxvYWTESpcCBsQgYNC/6qZKZpAZRnDnnToHyRbKVTep4hmblECdUiR2YY7EIM81xa+w9CKLB0EWKoNNIF5YnS9DJn32btrxUeNyTqYiAgHCo3NpZ8RA2hwV9LC/68fcptLD54ZA2suhlXqXWfT4AeFaD28zONQAIHsdcJtCYZirh167tMKdWWITfqHnsLymvRSnF8M5C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKZJuPm25x48wqc2EZmKhnng4riZ5xVN9Yn/OoAO1Ul5o3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
-View my publicly-auditable identity here: https://keybase.io/jbmagination
+View my publicly-auditable identity here: https://keybase.io/suprstarrd
 
 ==================================================================
