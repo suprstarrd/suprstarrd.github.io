@@ -200,7 +200,7 @@ span[id="grapheneos"] span[id="dark"] {
 /* Ring owner requests for widget to be hidden until you are part of the ring */
 .droidringwidget,
 #palestinering {
-    /* display: none; */
+    display: none;
 }
 
 /* DROIDRING styles */
