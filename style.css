@@ -14,10 +14,7 @@ code {
 }
 
 body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* TODO: make this center-center instead of top-center */
     text-align: center;
 }
 
