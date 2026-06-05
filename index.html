@@ -1,77 +1,273 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>i make stuff</title>
-    <link rel="me" href="https://mastodon.social/@jbmagination" />
-    <link rel="me" href="https://mastodon.social/@JBMagination2" />
+
+<head>
+  <title>i make stuff</title>
+  <link rel="me" href="https://mastodon.social/@jbmagination" />
+  <link rel="me" href="https://mastodon.social/@JBMagination2" />
+  <link rel="me" href="https://mastodon.social/@suprstarrd" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      :root {
-        color-scheme: light dark;
-      }
-      * {
-        font-family: Helvetica;
-      }
-      body {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
+  <meta name="color-scheme" content="light dark">
+  <style>
+    /*** Actual website styles ***/
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+    * {
+      font-family: Helvetica;
+    }
+
+    body {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    a {
+      color: rgb(0, 64, 255);
+      text-decoration: none;
+      position: relative;
+      transition: color 0.25s;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid rgb(0, 128, 255);
+      transition: 0.4s;
+    }
+
+    a:hover:after {
+      width: 100%;
+      color: rgb(0, 128, 255);
+    }
+
+    a:hover {
+      color: rgb(0, 128, 255);
+    }
+
+    @media (prefers-color-scheme: dark) {
       a {
-        color: rgb(0, 64, 255);
+        color: rgb(0, 128, 255);
         text-decoration: none;
         position: relative;
         transition: color 0.25s;
       }
+
       a:after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         width: 0%;
-        border-bottom: 2px solid rgb(0, 128, 255);
+        border-bottom: 2px solid rgb(78, 166, 255);
         transition: 0.4s;
       }
+
       a:hover:after {
         width: 100%;
-        color: rgb(0, 128, 255);
+        color: rgb(78, 166, 255);
       }
+
+      div[id="88x31"] a:hover:after {
+        width: 0%;
+      }
+
+      div[id="88x31"] a>img {
+        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+        transition: 0.4s;
+      }
+
+      div[id="88x31"] a:hover>img {
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+        transition: 0.4s;
+      }
+
+      div[id="88x31"] a:hover>img:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+      }
+
+      div[id="webring"] a:hover:after {
+        width: 0%;
+      }
+
+      div[id="webring"] a>img {
+        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+        transition: 0.4s;
+      }
+
+      div[id="webring"] a:hover>img {
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+        transition: 0.4s;
+      }
+
+      div[id="webring"] a:hover>img:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+      }
+
+      div[id="88x31"] a>object {
+        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+        transition: 0.4s;
+      }
+
+      div[id="88x31"] a:hover>object {
+        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+        transition: 0.4s;
+      }
+
+      div[id="88x31"] a:hover>object:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+      }
+
       a:hover {
-        color: rgb(0, 128, 255);
+        color: rgb(78, 166, 255);
       }
-      @media (prefers-color-scheme: dark) {
-       a {
-          color: rgb(0, 128, 255);
-          text-decoration: none;
-          position: relative;
-          transition: color 0.25s;
-        }
-        a:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0%;
-          border-bottom: 2px solid rgb(78, 166, 255);
-          transition: 0.4s;
-        }
-        a:hover:after {
-          width: 100%;
-          color: rgb(78, 166, 255);
-        }
-        a:hover {
-          color: rgb(78, 166, 255); 
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h1><u><i>i make stuff</i></u></h1>
-    <h2>i make <a href="https://music.jbmagination.com">music</a> and other stuff too</h2>
-    <p>but i'm too lazy to make the other pages at 1:50am, check back tomorrow.</p>
+    }
+
+    /* Ring owner requests for widget to be hidden until you are part of the ring */
+    .droidringwidget {
+      display: none;
+    }
+
+    #palestinering {
+      display: none;
+    }
+
+    /* DROIDRING styles */
+    .droidringwidget {
+      font-family: 'Droid Sans', sans-serif;
+      align-content: center;
+      text-align: center;
+      width: 215px;
+      border: 1px solid #666666;
+      background: linear-gradient(0deg, black, #000000db);
+      padding: 5px;
+    }
+
+    .buttonsdroidring {
+      background: #989898;
+      padding: 4px;
+      margin: -5px;
+    }
+
+    .navdroidring {
+      background: linear-gradient(to bottom, #F1F1F1, #B8B8B8);
+      padding: 5px;
+      color: black;
+      box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003B;
+      border: none;
+      width: 50px;
+      height: 27px;
+      min-width: 50px;
+    }
+
+    .navdroidring:active {
+      background: linear-gradient(to bottom, #FFD554, #E99D00);
+    }
+
+    /* .navdroidring:hover {
+      background: linear-gradient(to bottom, #ffebc4, #f2f2f2);
+    } */
+  </style>
+</head>
+
+<body>
+  <h1><u><i>i make stuff</i></u></h1>
+  <h2>i make <a href="https://music.suprstarrd.com">music</a> and other stuff too</h2>
+  <p>under active construction</p>
+  <p>•</p>
+  <p style="font-size:75%"><a href="mailto:business@suprstarrd.com">business inquiries</a></p>
+  <p>•</p>
+  <input type="checkbox" name="show-more">
+  <label for="show-more">show more (webrings / 88x31 & co.)</label>
+  <div id="show-more">
+    <hr>
+    <div id="webring-selector">
+      <p>webring selector</p>
+      <p style="font-size:75%">some of these widgets have been modified to support environments without JavaScript</p>
+      <div id="webring">
+        ...nothing at the moment!
+        <div id="palestinering">
+          <a href="https://catboo.leprd.space/webring/redirect.php?prv&s=STR" title="previous">
+            <img src="https://websitesforpalestine.neocities.org/widget/left.png" alt="previous">
+          </a>
+          <a href="https://websitesforpalestine.neocities.org/" target="_blank">
+            <img src="https://websitesforpalestine.neocities.org/widget/center.png" alt="websites for a free palestine">
+          </a>
+          <a href="https://catboo.leprd.space/webring/redirect.php?nxt&s=STR" title="next">
+            <img src="https://websitesforpalestine.neocities.org/widget/right.png" alt="next">
+          </a>
+        </div>
+        <div class="droidringwidget">
+          <a href="https://kanandraw.neocities.org/stuffs/droidring/home"><img
+              src="https://kanandraw.neocities.org/stuffs/droidring/assets/logo.png" style="width: 200px;"></a><br />
+          <img src="https://kanandraw.neocities.org/stuffs/droidring/assets/droidwidget.png" style="width: 115px;"><br>
+          <div class="buttonsdroidring">
+            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=previous"><button
+                class="navdroidring">←</button></a>
+            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=random"><button class="navdroidring"
+                style="position: relative; top: 1.6px;">⚄</button></a>
+            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=next"><button
+                class="navdroidring">→</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <p>•</p>
-    <p style="font-size:75%"><a href="mailto:business@jbmagination.com">business inquiries</h2>
-  </body>
+    <div id="88x31">
+      <p>88x31 & co. collection</p>
+      <div id="88x31-left"></div>
+      <span id="suprstarrd">
+        <a href="https://suprstarrd.com">
+          <img width="88" height="31" src="./88x31/suprstarrd.png"></img>
+        </a>
+      </span>
+      <span id="dogteeth">
+        <a href="https://dogteeth808.neocities.org">
+          <object data="https://mentholgrrl.neocities.org/imageassets/8831/dogteeth_button3.png" type="image/png">
+            <img width="88" height="31" src="./88x31/dogteeth.png"></img>
+          </object>
+        </a>
+      </span>
+      <span id="crimew">
+        <a href="https://maia.crimew.gay">
+          <object data="https://maia.crimew.gay/badges/maia.crimew.gay.png" type="image/png">
+            <img width="88" height="31" src="./88x31/maia.crimew.gay.png"></img>
+          </object>
+        </a>
+      </span>
+      <span id="grapheneos">
+        <a href="https://grapheneos.org">
+          <picture>
+            <source srcset="./88x31/grapheneos-dark.png" media="(prefers-color-scheme: dark)">
+            <img width="88" height="31" src="./88x31/grapheneos.png"></img>
+          </picture>
+        </a>
+      </span>
+      <span id="noweb3">
+        <a href="https://yesterweb.org/no-to-web3/">
+          <object data="https://auzziejay.com/images/noweb32.gif" type="image/png">
+            <img width="88" height="31" src="./88x31/noweb3.gif"></img>
+          </object>
+        </a>
+      </span>
+      <span id="acab"><img width="88" height="31" src="./88x31/acab.gif"></img></span>
+      <div id="88x31-right"></div>
+    </div>
+  </div>
+</body>
+
 </html>
