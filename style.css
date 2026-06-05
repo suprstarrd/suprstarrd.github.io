@@ -9,6 +9,10 @@
     font-family: Helvetica;
 }
 
+code {
+    font-family: monospace;
+}
+
 body {
     position: absolute;
     top: 50%;
@@ -200,7 +204,7 @@ span[id="grapheneos"] span[id="dark"] {
 /* Ring owner requests for widget to be hidden until you are part of the ring */
 .droidringwidget,
 #palestinering {
-    /* display: none; */
+    display: none;
 }
 
 /* DROIDRING styles */
