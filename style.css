@@ -74,6 +74,94 @@ span[id="grapheneos"] span[id="dark"] {
     display: none;
 }
 
+div[id="88x31"] a:hover:after {
+    width: 0%;
+}
+
+div[id="88x31"] a:hover>img:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="webring"] a:hover:after {
+    width: 0%;
+}
+
+div[id="webring"] a:hover img:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover source:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover object:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover picture:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a>img {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover>img {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="webring"] a img {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="webring"] a:hover img {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a source {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover source {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a object {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover object {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a picture {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover picture {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
 @media (prefers-color-scheme: dark) {
     a {
         color: rgb(0, 128, 255);
@@ -97,18 +185,20 @@ span[id="grapheneos"] span[id="dark"] {
         color: rgb(78, 166, 255);
     }
 
+    a:hover {
+        color: rgb(78, 166, 255);
+    }
+
+    span[id="grapheneos"] span[id="dark"] {
+        display: inline-block;
+    }
+
+    span[id="grapheneos"] span[id="light"] {
+        display: none;
+    }
+
     div[id="88x31"] a:hover:after {
         width: 0%;
-    }
-
-    div[id="88x31"] a>img {
-        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
-        transition: 0.4s;
-    }
-
-    div[id="88x31"] a:hover>img {
-        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
-        transition: 0.4s;
     }
 
     div[id="88x31"] a:hover>img:after {
@@ -121,29 +211,9 @@ span[id="grapheneos"] span[id="dark"] {
         width: 0%;
     }
 
-    div[id="webring"] a img {
-        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
-        transition: 0.4s;
-    }
-
-    div[id="webring"] a:hover img {
-        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
-        transition: 0.4s;
-    }
-
     div[id="webring"] a:hover img:after {
         width: 100%;
         border-bottom: 2px solid rgb(78, 166, 255);
-        transition: 0.4s;
-    }
-
-    div[id="88x31"] a source {
-        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
-        transition: 0.4s;
-    }
-
-    div[id="88x31"] a:hover source {
-        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
         transition: 0.4s;
     }
 
@@ -153,29 +223,9 @@ span[id="grapheneos"] span[id="dark"] {
         transition: 0.4s;
     }
 
-    div[id="88x31"] a object {
-        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
-        transition: 0.4s;
-    }
-
-    div[id="88x31"] a:hover object {
-        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
-        transition: 0.4s;
-    }
-
     div[id="88x31"] a:hover object:after {
         width: 100%;
         border-bottom: 2px solid rgb(78, 166, 255);
-        transition: 0.4s;
-    }
-
-    div[id="88x31"] a picture {
-        filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
-        transition: 0.4s;
-    }
-
-    div[id="88x31"] a:hover picture {
-        filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
         transition: 0.4s;
     }
 
@@ -183,18 +233,6 @@ span[id="grapheneos"] span[id="dark"] {
         width: 100%;
         border-bottom: 2px solid rgb(78, 166, 255);
         transition: 0.4s;
-    }
-
-    a:hover {
-        color: rgb(78, 166, 255);
-    }
-
-    span[id="grapheneos"] span[id="dark"] {
-        display: inline-block;
-    }
-
-    span[id="grapheneos"] span[id="light"] {
-        display: none;
     }
 }
 
