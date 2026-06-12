@@ -18,6 +18,10 @@ body {
     text-align: center;
 }
 
+.notice {
+    font-size: 75%;
+}
+
 a {
     color: rgb(0, 64, 255);
     text-decoration: none;
