@@ -44,6 +44,25 @@ a:hover {
     color: rgb(0, 128, 255);
 }
 
+#disablejs {
+    background-color: rgba(0, 0, 0, .85);
+    bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    left: 0;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99
+}
+
+#disablejs a {
+    cursor: help
+}
+
 span[id="acab"] .gif,
 span[id="acab"]:hover .cover,
 span[id="corvidae"] .gif,
