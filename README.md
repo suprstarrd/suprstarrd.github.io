@@ -1,8 +1,10 @@
 # Website
 
-This repository contains my static website over the HTTP(S), Gemini, and Gopher protocols.
+This repository contains my website and blog over the HTTP(S), Gemini, and Gopher protocols.
 
 If you would like to access it, visit one of the following pages below:
+
+*Not all of these are operational at the moment.*
 
 * [https://suprstarrd.com](<https://suprstarrd.com>)
 * [gemini://suprstarrd.com](<gemini://suprstarrd.com>)

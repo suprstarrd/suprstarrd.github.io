@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/suprstarrd
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://suprstarrd.com
+  * I am suprstarrd (https://keybase.io/suprstarrd) on keybase.
+  * I have a public key ASAjmmu8nAZOmflts7ik9OxbllqRPlSGtGDpdOxG5kQVLAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120239a6bbc9c064e99f96db3b8a4f4ec5b965a913e5486b460e974ec46e644152c0a",
+      "host": "keybase.io",
+      "kid": "0120239a6bbc9c064e99f96db3b8a4f4ec5b965a913e5486b460e974ec46e644152c0a",
+      "uid": "f87af5014d9b1fe0d9d734675c729b19",
+      "username": "suprstarrd"
+    },
+    "merkle_root": {
+      "ctime": 1769993110,
+      "hash": "0315ef460d12053219c4c6b756b194b30690a0241994ff26399d91254fdccd17195927696237cad6b82b2c8063dfa79636a2f70dc630c26ad7a18fa302948eac",
+      "hash_meta": "4fffe7d9b7b240f5f19f4db37976344d362cac4fa11e96f1b09266c8cbedbc48",
+      "seqno": 27381618
+    },
+    "service": {
+      "entropy": "aEHF70gd69xsUuNJ3SliMK/W",
+      "hostname": "suprstarrd.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.4"
+  },
+  "ctime": 1769993361,
+  "expire_in": 504576000,
+  "prev": "60d0bfeaa64a6690194670e79d3a07c916ca5537a9e2199b94409d522476618e",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgI5prvJwGTpn5bbO4pPTsW5ZakT5UhrRg6XTsRuZEFSwKp3BheWxvYWTESpcCBsQgYNC/6qZKZpAZRnDnnToHyRbKVTep4hmblECdUiR2YY7EIM81xa+w9CKLB0EWKoNNIF5YnS9DJn32btrxUeNyTqYiAgHCo3NpZ8RA2hwV9LC/68fcptLD54ZA2suhlXqXWfT4AeFaD28zONQAIHsdcJtCYZirh167tMKdWWITfqHnsLymvRSnF8M5C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKZJuPm25x48wqc2EZmKhnng4riZ5xVN9Yn/OoAO1Ul5o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/suprstarrd
+
+==================================================================

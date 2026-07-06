@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jbmagination.com
+Token: 3efff23b52f4e7dce9111478ba77e85380691892fd853b07705bae2341406f82

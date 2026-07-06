@@ -1,0 +1,328 @@
+/*** Actual website styles ***/
+:root {
+    color-scheme: light dark;
+    supported-color-schemes: light dark;
+    /* https://lilles.github.io/specs/supported-color-schemes.html */
+}
+
+* {
+    font-family: Helvetica;
+}
+
+code {
+    font-family: monospace;
+}
+
+body {
+    /* TODO: make this center-center instead of top-center */
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 64, 255);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.25s;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+a:hover:after {
+    width: 100%;
+    color: rgb(0, 128, 255);
+}
+
+a:hover {
+    color: rgb(0, 128, 255);
+}
+
+#disablejs {
+    background-color: rgba(0, 0, 0, .85);
+    bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    left: 0;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99
+}
+
+#disablejs a {
+    cursor: help
+}
+
+span[id="acab"] .gif,
+span[id="acab"]:hover .cover,
+span[id="corvidae"] .gif,
+span[id="corvidae"]:hover .cover,
+span[id="noweb3"] .gif,
+span[id="noweb3"]:hover .cover,
+span[id="besties"] .gif,
+span[id="besties"]:hover .cover {
+    display: none;
+}
+
+span[id="acab"] .cover,
+span[id="acab"]:hover .gif,
+span[id="corvidae"] .cover,
+span[id="corvidae"]:hover .gif,
+span[id="noweb3"] .cover,
+span[id="noweb3"]:hover .gif,
+span[id="besties"] .cover,
+span[id="besties"]:hover .gif {
+    display: inline-block;
+}
+
+span[id="grapheneos"] span[id="light"] {
+    display: inline-block;
+}
+
+span[id="grapheneos"] span[id="dark"] {
+    display: none;
+}
+
+div[id="88x31"] a:hover:after {
+    width: 0%;
+}
+
+div[id="88x31"] a:hover>img:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="webring"] a:hover:after {
+    width: 0%;
+}
+
+div[id="webring"] a:hover img:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover source:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover object:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover picture:after {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a>img {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover>img {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="webring"] a img {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="webring"] a:hover img {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a source {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover source {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a object {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover object {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a picture {
+    filter: sepia(0%) saturate(100%) brightness(100%) hue-rotate(0deg);
+    transition: 0.4s;
+}
+
+div[id="88x31"] a:hover picture {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(90deg);
+    transition: 0.4s;
+}
+
+.license > summary {
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+.license > * {
+    text-align: left;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notice {
+    color: red;
+}
+
+.license hr {
+    width: 1%;
+    margin: 0 auto;
+}
+
+.smallprint {
+    font-size: 75%;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: rgb(0, 128, 255);
+        text-decoration: none;
+        position: relative;
+        transition: color 0.25s;
+    }
+
+    a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+    }
+
+    a:hover:after {
+        width: 100%;
+        color: rgb(78, 166, 255);
+    }
+
+    a:hover {
+        color: rgb(78, 166, 255);
+    }
+
+    span[id="grapheneos"] span[id="dark"] {
+        display: inline-block;
+    }
+
+    span[id="grapheneos"] span[id="light"] {
+        display: none;
+    }
+
+    div[id="88x31"] a:hover:after {
+        width: 0%;
+    }
+
+    div[id="88x31"] a:hover>img:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+    }
+
+    div[id="webring"] a:hover:after {
+        width: 0%;
+    }
+
+    div[id="webring"] a:hover img:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+    }
+
+    div[id="88x31"] a:hover source:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+    }
+
+    div[id="88x31"] a:hover object:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+    }
+
+    div[id="88x31"] a:hover picture:after {
+        width: 100%;
+        border-bottom: 2px solid rgb(78, 166, 255);
+        transition: 0.4s;
+    }
+}
+
+/* Ring owner requests for widget to be hidden until you are part of the ring */
+.droidringwidget,
+#palestinering {
+    display: none;
+}
+
+/* DROIDRING styles */
+.droidringwidget {
+    font-family: 'Droid Sans', sans-serif;
+    align-content: center;
+    text-align: center;
+    width: 215px;
+    border: 1px solid #666666;
+    background: linear-gradient(0deg, black, #000000db);
+    padding: 5px;
+}
+
+.buttonsdroidring {
+    background: #989898;
+    padding: 4px;
+    margin: -5px;
+}
+
+.navdroidring {
+    background: linear-gradient(to bottom, #F1F1F1, #B8B8B8);
+    padding: 5px;
+    color: black;
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003B;
+    border: none;
+    width: 50px;
+    height: 27px;
+    min-width: 50px;
+}
+
+.navdroidring:active {
+    background: linear-gradient(to bottom, #FFD554, #E99D00);
+}
+
+/* .navdroidring:hover {
+    background: linear-gradient(to bottom, #ffebc4, #f2f2f2);
+} */

@@ -1,0 +1,57 @@
+---
+layout: page.liquid
+title: home
+rating: 14
+---
+
+<!-- todo: stop using h1/h2 for these because it messes up the structural overview of the page -->
+<h1><u><i>i do stuff</i></u></h1>
+<h2>i make <a href="https://music.suprstarrd.com">music</a> and <a href="https://suprstarrd.com/blog">blog posts</a> and other stuff too</h2>
+<p>under active construction. <a href="{{ url }}/contact/index.html">want to contact me?</a></p>
+<p>•</p>
+<details>
+  <summary>show more (webrings / 88x31 & co.)</summary>
+  <div id="webring-selector">
+    <p><u>webring selector</u></p>
+    <p class="smallprint">some of these widgets have been modified to support environments without JavaScript</p>
+    <p class="smallprint">though, unfortunately this selector does not work without JavaScript at this time</p>
+    <div id="webring">
+      <div id="webrings">
+        <div id="grapheneos-webring">
+            <a href="https://grapheneos-webring.codeberg.page"><b>GrapheneOS webring</b></a><br />
+            <a href="https://grapheneos-webring.codeberg.page?action=previous">previous</a>
+            <a href="https://grapheneos-webring.codeberg.page?action=random">random</a>
+            <a href="https://grapheneos-webring.codeberg.page?action=next">next</a>
+        </div>
+        <div id="palestinering">
+          <a href="https://catboo.leprd.space/webring/redirect.php?prv&s=spr" title="previous">
+            <img src="https://websitesforpalestine.neocities.org/widget/left.png" alt="previous">
+          </a>
+          <a href="https://websitesforpalestine.neocities.org/" target="_blank">
+            <img src="https://websitesforpalestine.neocities.org/widget/center.png" alt="websites for a free palestine">
+          </a>
+          <a href="https://catboo.leprd.space/webring/redirect.php?nxt&s=spr" title="next">
+            <img src="https://websitesforpalestine.neocities.org/widget/right.png" alt="next">
+          </a>
+        </div>
+
+        <div class="droidringwidget">
+          <a href="https://kanandraw.neocities.org/stuffs/droidring/home"><img
+              src="https://kanandraw.neocities.org/stuffs/droidring/assets/logo.png" style="width: 200px;"></a><br />
+          <img src="https://kanandraw.neocities.org/stuffs/droidring/assets/droidwidget.png" style="width: 115px;"><br>
+          <div class="buttonsdroidring">
+            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=previous"><button
+                class="navdroidring">←</button></a>
+            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=random"><button class="navdroidring"
+                style="position: relative; top: 1.6px;">⚄</button></a>
+            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=next"><button
+                class="navdroidring">→</button></a>
+          </div>
+        </div>
+      </div>
+      <p><span id="webring-prev"><a href="#">previous webring</a></span> | <span id="webring-next"><a href="#">next webring</a></span></p>
+    </div>
+  </div>
+  <p>•</p>
+  {% render "88x31" %}
+</details>

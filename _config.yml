@@ -1,3 +1,3 @@
-include: [".well-known","exolink.md"]
+include: [".well-known"]
 plugins:
   - jekyll-redirect-from
